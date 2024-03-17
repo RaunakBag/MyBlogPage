@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import flowbitePlugin from "flowbite/plugin";
+import vitePluginRequire from "vite-plugin-require";
 
 
 export default {
@@ -11,5 +12,5 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [flowbitePlugin ],
+  plugins: [flowbitePlugin, vitePluginRequire('tailwind-scrollbar') ],
 }
