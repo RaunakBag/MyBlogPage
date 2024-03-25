@@ -18,7 +18,7 @@ export default function FooterCom() {
                         </Link>
                     </div>
                     <div className="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6">
-                        <React.Fragment>
+                        <div>
                             <Footer.Title title="About" />
                             <Footer.LinkGroup col>
                                 <Footer.Link href="https://qrcode-generator-raunak.netlify.app/" target="_blank" rel='noopener noreferrer'>
@@ -28,8 +28,8 @@ export default function FooterCom() {
                                     Raunak's Blog
                                 </Footer.Link>
                             </Footer.LinkGroup>
-                        </React.Fragment>
-                        <React.Fragment>
+                        </div>
+                        <div>
                             <Footer.Title title="Follow Us" />
                             <Footer.LinkGroup col>
                                 <Footer.Link href="https://github.com/RaunakBag" target="_blank" rel='noopener noreferrer'>
@@ -39,8 +39,8 @@ export default function FooterCom() {
                                     Linkedin
                                 </Footer.Link>
                             </Footer.LinkGroup>
-                        </React.Fragment>
-                        <React.Fragment>
+                        </div>
+                        <div>
                             <Footer.Title title="Legal" />
                             <Footer.LinkGroup col>
                                 <Footer.Link href="#">
@@ -50,7 +50,7 @@ export default function FooterCom() {
                                     Terms &amp; Conditions
                                 </Footer.Link>
                             </Footer.LinkGroup>
-                        </React.Fragment>
+                        </div>
                     </div>
                 </div>
                 <Footer.Divider />
