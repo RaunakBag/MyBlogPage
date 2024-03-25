@@ -1,5 +1,5 @@
 import moment from 'moment';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaThumbsUp } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 import { Button, Textarea } from 'flowbite-react';
@@ -67,7 +67,7 @@ export default function Comment({ comment, onLike, onEdit, onDelete }) {
             {moment(comment.createdAt).fromNow()}
           </span>        </div>
         {isEditing ? (
-          <div>
+          <React.Fragment>
             <Textarea
               className='mb-2'
               value={editedContent}
@@ -92,9 +92,9 @@ export default function Comment({ comment, onLike, onEdit, onDelete }) {
                 Cancel
               </Button>
             </div>
-          </div>
+          </React.Fragment>
         ) : (
-          <div>
+          <React.Fragment>
             <p className='text-gray-500 pb-2'>{comment.content}</p>
             <div className='flex items-center pt-2 text-xs border-t dark:border-gray-700 max-w-fit gap-2'>
               <button
@@ -115,7 +115,7 @@ export default function Comment({ comment, onLike, onEdit, onDelete }) {
               </p>
               {currentUser &&
                 (currentUser._id === comment.userId || currentUser.isAdmin) && (
-                  <>
+                  <React.Fragment>
                     <button
                       type='button'
                       onClick={handleEdit}
@@ -130,10 +130,10 @@ export default function Comment({ comment, onLike, onEdit, onDelete }) {
                     >
                       Delete
                     </button>
-                  </>
+                  </React.Fragment>
                 )}
             </div>
-          </div>
+          </React.Fragment>
         )}
       </div>
     </div>

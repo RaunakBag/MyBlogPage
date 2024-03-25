@@ -2,6 +2,7 @@ import { Footer } from "flowbite-react"
 import { Link } from "react-router-dom"
 import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
+import React from "react";
 
 
 
@@ -17,7 +18,7 @@ export default function FooterCom() {
                         </Link>
                     </div>
                     <div className="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6">
-                        <div>
+                        <React.Fragment>
                             <Footer.Title title="About" />
                             <Footer.LinkGroup col>
                                 <Footer.Link href="https://qrcode-generator-raunak.netlify.app/" target="_blank" rel='noopener noreferrer'>
@@ -27,8 +28,8 @@ export default function FooterCom() {
                                     Raunak's Blog
                                 </Footer.Link>
                             </Footer.LinkGroup>
-                        </div>
-                        <div>
+                        </React.Fragment>
+                        <React.Fragment>
                             <Footer.Title title="Follow Us" />
                             <Footer.LinkGroup col>
                                 <Footer.Link href="https://github.com/RaunakBag" target="_blank" rel='noopener noreferrer'>
@@ -38,29 +39,29 @@ export default function FooterCom() {
                                     Linkedin
                                 </Footer.Link>
                             </Footer.LinkGroup>
-                        </div>
-                        <div>
-                        <Footer.Title title="Legal" />
-                        <Footer.LinkGroup col>
-                            <Footer.Link href="#">
-                                Privacy Policy
-                            </Footer.Link>
-                            <Footer.Link href="#">
-                                Terms &amp; Conditions
-                            </Footer.Link>
-                        </Footer.LinkGroup>
-                        </div>
+                        </React.Fragment>
+                        <React.Fragment>
+                            <Footer.Title title="Legal" />
+                            <Footer.LinkGroup col>
+                                <Footer.Link href="#">
+                                    Privacy Policy
+                                </Footer.Link>
+                                <Footer.Link href="#">
+                                    Terms &amp; Conditions
+                                </Footer.Link>
+                            </Footer.LinkGroup>
+                        </React.Fragment>
                     </div>
                 </div>
-                <Footer.Divider/>
+                <Footer.Divider />
                 <div className="w-full sm:flex sm:items-center sm:justify-between">
-                    <Footer.Copyright href='#' by="Raunak's Blog" year={new Date().getFullYear()}/>
+                    <Footer.Copyright href='#' by="Raunak's Blog" year={new Date().getFullYear()} />
                     <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
-                    <Footer.Icon href="#" icon={BsFacebook}/>
-                    <Footer.Icon href="https://www.linkedin.com/in/raunak-bag-3b0a69153/" icon={BsLinkedin}/>
-                    <Footer.Icon href="https://github.com/RaunakBag" icon={BsGithub}/>
-                    <Footer.Icon href="https://raunakbag.netlify.app/" icon={CgWebsite}/>
-                </div>
+                        <Footer.Icon href="#" icon={BsFacebook} />
+                        <Footer.Icon href="https://www.linkedin.com/in/raunak-bag-3b0a69153/" icon={BsLinkedin} />
+                        <Footer.Icon href="https://github.com/RaunakBag" icon={BsGithub} />
+                        <Footer.Icon href="https://raunakbag.netlify.app/" icon={CgWebsite} />
+                    </div>
                 </div>
             </div>
         </Footer>

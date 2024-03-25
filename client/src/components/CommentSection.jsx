@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Alert, Button, Modal, Textarea } from 'flowbite-react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import Comment from './Comment';
@@ -169,7 +169,7 @@ export default function CommentSection({ postId }) {
       {comments.length === 0 ? (
         <p className='text-sm my-5'>No comments yet!</p>
       ) : (
-        <div>
+        <React.Fragment>
           <div className='text-sm my-5 flex items-center gap-1'>
             <p>Comments</p>
             <div className='border border-gray-400 py-1 px-2 rounded-sm'>
@@ -187,7 +187,7 @@ export default function CommentSection({ postId }) {
                 setCommentToDelete(commentId);
               }}
             />))}
-        </div>
+        </React.Fragment>
       )}
       <Modal
         show={showModal}

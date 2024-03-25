@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import { Modal, Table, Button } from 'flowbite-react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { HiOutlineExclamationCircle } from 'react-icons/hi';
@@ -75,7 +75,7 @@ export default function DashPosts() {
   return (
     <div className='table-auto overflow-x-scroll md:mx-auto p-3 scrollbar scrollbar-track-slate-100 scrollbar-thumb-slate-300 dark:scrollbar-track-slate-700 dark:scrollbar-thumb-slate-500'>
       {currentUser.isAdmin && userPosts.length > 0 ? (
-        <div>
+        <React.Fragment>
           <Table hoverable className='shadow-md'>
             <Table.Head>
               <Table.HeadCell>Date updated</Table.HeadCell>
@@ -142,7 +142,7 @@ export default function DashPosts() {
               Show more
             </button>
           )}
-        </div>
+        </React.Fragment>
       ) : (
         <p>You have no posts yet!</p>
       )}

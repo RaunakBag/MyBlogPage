@@ -13,10 +13,11 @@ import CreatePost from './pages/CreatePost'
 import UpdatePost from './pages/UpdatePost'
 import PostPage from './pages/PostPage';
 import ScrollToTop from './components/ScrollToTop';
+import React from 'react'
 
 export default function App() {
   return (
-    <div>
+    <React.Fragment>
       <BrowserRouter>
       <ScrollToTop />
         <Header />
@@ -37,7 +38,7 @@ export default function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </div>
+    </React.Fragment>
   )
 }
 

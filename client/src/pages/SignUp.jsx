@@ -1,5 +1,5 @@
 import { Alert, Button, Label, Spinner, TextInput } from "flowbite-react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import OAuth from "../components/OAuth";
 
@@ -65,10 +65,10 @@ export default function SignUp() {
             </div>
             <Button gradientDuoTone='purpleToPink' type="submit" disabled={loading}>
             {loading?(
-              <div>
+              <React.Fragment>
                 <Spinner size='sm'/>
                 <span className="pl-3">Loading...</span>
-              </div>
+              </React.Fragment>
               ):(
                 'Sign-Up'
               
