@@ -1,32 +1,45 @@
-
 export default function About() {
   return (
-    <div className='min-h-screen flex items-center justify-center'>
-      <div className='max-w-2xl mx-auto p-3 text-center'>
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="max-w-2xl mx-auto p-3 text-center">
         <div>
-          <h1 className='text-3xl font font-semibold text-center my-7'>
-            About Raunak's Blog
+          <h1 className="text-3xl font font-semibold text-center my-7">
+            Welcome to Raunak's Blog!
           </h1>
-          <div className='text-md text-gray-500 flex flex-col gap-6'>
+          <p></p>
+          <div className="text-md text-gray-500 flex flex-col gap-6">
             <p>
-              Welcome to Raunak's Blog! This blog was created by Raunak Bag
-              as a personal project to share his thoughts and ideas with the
-              world. Raunak is a passionate developer who loves to write about
-              technology, coding, and everything in between.
+              Hello and thank you for visiting Raunak's Blog! This platform is a
+              personal endeavor created by Raunak Bag to share his insights,
+              thoughts, and ideas with the world. As a passionate developer,
+              Raunak's love for technology, coding, and all things related
+              shines through in his writing.
             </p>
 
             <p>
-              On this blog, you'll find weekly articles and tutorials on topics
-              such as web development, software engineering, and programming
-              languages. Raunak is always learning and exploring new
-              technologies, so be sure to check back often for new content!
+              Here, you'll discover weekly articles and tutorials covering a
+              wide array of topics including web development, software
+              engineering, programming languages, and more. Raunak's dedication
+              to learning and exploring new technologies ensures that there's
+              always fresh and exciting content for you to delve into. Be sure
+              to check back regularly for updates and new posts!
             </p>
 
             <p>
-              We encourage you to leave comments on our posts and engage with
-              other readers. You can like other people's comments and reply to
-              them as well. We believe that a community of learners can help
-              each other grow and improve.
+              At Raunak's Blog, we value community engagement and interaction.
+              We encourage you to leave comments on our posts, share your
+              thoughts, and engage with other readers. Whether you're providing
+              feedback, asking questions, or sharing your own experiences, your
+              participation enriches the learning experience for everyone. Don't
+              hesitate to like and reply to other people's comments – after all,
+              we believe that a thriving community of learners fosters growth
+              and improvement for all.
+            </p>
+
+            <p>
+              Thank you for joining us on this journey of exploration and
+              discovery. Together, let's dive into the exciting world of
+              technology and coding!
             </p>
           </div>
         </div>
