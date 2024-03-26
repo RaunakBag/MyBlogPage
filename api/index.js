@@ -10,7 +10,7 @@ import path from 'path'
 
 dotenv.config();
 
-mongoose.connect(process.env.MONGO).then(
+mongoose.connect(process.env.MONGO,{ useNewUrlParser: true }).then(
     () => { console.log('MongoDB is connected') }
 ).catch(err => {
     console.log(err);
