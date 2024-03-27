@@ -8,13 +8,9 @@ import cookieParser from 'cookie-parser'
 import commentRoutes from './routes/comment.route.js';
 import path from 'path'
 
-dotenv.config();
+dotenv.config({path: './.env'});
 
-const uri = process.env.MONGO;
-
-mongoose
-  .connect(uri)
-  .then(() => {
+mongoose.connect(process.env.MONGO).then(() => {
     console.log('MongoDb is connected');
   })
   .catch((err) => {
