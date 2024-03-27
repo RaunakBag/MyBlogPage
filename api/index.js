@@ -10,8 +10,10 @@ import path from 'path'
 
 dotenv.config();
 
+const uri = process.env.MONGO;
+
 mongoose
-  .connect(process.env.MONGO)
+  .connect(uri)
   .then(() => {
     console.log('MongoDb is connected');
   })
